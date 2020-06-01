@@ -1,0 +1,11 @@
+{% if sentiments.count > 0 %}
+
+{% for sentiment in sentiments %}
+<li>{{ sentiment.Product_Name}}</li>
+{% endfor %}
+
+{% else %}
+
+<li>Nothing to display</li>
+
+{% endif %}
